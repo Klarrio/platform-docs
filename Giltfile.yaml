@@ -1,0 +1,19 @@
+lt vdebug: false
+giltdir: ~/.gilt/clone
+giltfile: Giltfile.yaml
+parallel: true
+repositories:
+  - git: git@github.com:Klarrio/documentation-repo-1.git
+    version: main
+    dstDir: repo1-docs
+  - git: git@github.com:Klarrio/documentation-repo-2.git
+    version: main
+    dstDir: repo2-docs
+  - git: git@github.com:Klarrio/documentation-repo-3.git
+    version: main
+    dstDir: repo3-docs
+    commands:
+      - cmd: go
+        args:
+          - run
+          - main.go

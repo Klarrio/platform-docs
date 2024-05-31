@@ -1,0 +1,45 @@
+site_name: main documentation
+plugins:
+  - search
+  - monorepo
+ 
+
+nav:
+  - repo1: '!include ./repo1-docs/mkdocs.yml'
+  - repo2: '!include ./repo2-docs/mkdocs.yml'
+  - repo3: '!include ./repo3-docs/mkdocs.yml'
+
+theme: 
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+  #  - toc.integrate
+    - navigation.top
+    - search.suggest
+  #  - content.action.edit
+  #  - content.action.view
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - navigation.footer
+    - toc.follow
+
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: navy
+      accent: purple 
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: teal
+      accent: lime
+
+
+repo_url: https://github.com/PLACEHOLDER
