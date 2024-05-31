@@ -4,9 +4,9 @@ on:
  
   repository_dispatch:
     types: 
-      - trigger-workflow-from-repo1
-      - trigger-workflow-from-repo2
-      - trigger-workflow-from-repo3
+     # - trigger-workflow-from-repo1
+     # - trigger-workflow-from-repo2
+     # - trigger-workflow-from-repo3
 
 
   workflow_dispatch:
